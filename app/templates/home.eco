@@ -1,0 +1,57 @@
+<% translate = require 't7e' %>
+
+<div class="splash">
+
+  <div class="pre-title"><%- translate 'span', 'home.preTitle' %></div>
+  <div class="title"><%- translate 'span', 'home.title' %></div>
+
+  <a href="#/collections"><button class="start-transcribing"><%- translate 'span', 'home.start' %></button></a>
+
+</div>
+
+<div id="stats"></div>
+
+<div class="get-involved white-box">
+
+  <div class="columns three pad">
+
+    <h2><%- translate 'span', 'home.getInvolved.sectionTitle' %></h2>
+
+    <div class="column center">
+      <img src="images/home/icon-bird.png">
+      <div class="title"><%- translate 'span', 'home.getInvolved.columnOneTitle' %></div>
+      <p><%- translate 'span', 'home.getInvolved.columnOneContent' %></p>
+    </div>
+
+    <div class="column center">
+      <img src="images/home/icon-troffee.png">
+      <div class="title"><%- translate 'span', 'home.getInvolved.columnTwoTitle' %></div>
+      <p><%- translate 'span', 'home.getInvolved.columnTwoContent' %></p>
+    </div>
+
+    <div class="column center">
+      <img src="images/home/icon-lab.png">
+      <div class="title"><%- translate 'span', 'home.getInvolved.columnThreeTitle' %></div>
+      <p><%- translate 'span', 'home.getInvolved.columnThreeContent' %></p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="users-participating eggshell-box">
+
+  <div class="columns two pad">
+
+    <div class="column wide">
+      <h3><span id="users-participating">-</span> <%- translate 'span', 'home.usersParticipating.title' %></h3>
+      <p><%- translate 'span', 'home.usersParticipating.content' %></p>
+    </div>
+
+    <div class="column narrow"></div>
+
+  </div>
+
+  <%- require('./common/organizations')() %>
+
+</div>

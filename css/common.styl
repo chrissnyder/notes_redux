@@ -1,0 +1,72 @@
+#semantic-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+// Base element styles
+button
+  cursor: pointer
+
+p
+  line-height: 1.6em
+
+// Generic classes
+.center
+  text-align: center
+
+.white-box
+  background: #fff
+  border-bottom: 1px solid #000
+  color: #333
+
+.eggshell-box
+  background: #f2f7f7
+  color: #333
+
+.small-title
+  font-size: 0.7em
+  font-weight: 700
+  margin: 15px 0
+  opacity: 0.5
+  text-transform: uppercase
+
+
+// "Grid"
+.columns
+  clearfix()
+
+  > .column
+    border-right: 1px solid transparent
+    box-sizing: border-box
+    float: left
+
+    &:last-child
+      border-right: none
+
+  &.pad
+    padding: 0 25px
+
+    > .column
+      padding: 10px
+
+
+  &.two
+
+    > .column
+      width: 50%
+
+      &.wide
+        width: 66%
+
+      &.narrow
+        width: 33%
+
+  &.three
+
+    > .column
+      width: 33%
+
+  &.four
+
+    > .column
+      width: 25%

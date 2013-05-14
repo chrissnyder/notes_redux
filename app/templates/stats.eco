@@ -1,0 +1,37 @@
+<% translate = require 't7e' %>
+
+<div class="columns four">
+
+  <% unless @name?: %>
+    <div class="column">
+      <div class="stat">-</div>
+    </div>
+    <div class="column">
+      <div class="stat">-</div>
+    </div>
+    <div class="column">
+      <div class="stat">-</div>
+    </div>
+    <div class="column">
+      <div class="stat">-</div>
+    </div>
+  <% else: %>
+    <div class="column">
+      <div class="stat"><%- @collectionsAvailable() %></div>
+      <div class="descriptor"><%- translate 'span', 'stats.collectionsAvailable' %></div>
+    </div>
+    <div class="column">
+      <div class="stat"><%- @totalTranscriptions() %></div>
+      <div class="descriptor"><%- translate 'span', 'stats.totalTranscriptions' %></div>
+    </div>
+    <div class="column">
+      <div class="stat"><%- @transcriptionProgress() %></div>
+      <div class="descriptor"><%- translate 'span', 'stats.transcriptionProgress' %></div>
+    </div>
+    <div class="column">
+      <div class="stat"><%- @usersContributing() %></div>
+      <div class="descriptor"><%- translate 'span', 'stats.usersContributing' %></div>
+    </div>
+  <% end %>
+
+</div>

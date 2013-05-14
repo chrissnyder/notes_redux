@@ -1,0 +1,21 @@
+{
+  "dependencies": [
+    "es5-shimify",
+    "json2ify",
+    "t7e",
+
+    "zooniverse/lib/api",
+    
+    "zooniverse/models/base-model",
+    "zooniverse/models/project",
+
+    "zooniverse/controllers/top-bar",
+    "zooniverse/controllers/footer"
+  ],
+  "libs": [
+    "node_modules/Zooniverse/vendor/base64.js",
+    "public/vendor/jquery.js",
+    "public/vendor/underscore.js",
+    "public/vendor/backbone.js"
+  ]
+}

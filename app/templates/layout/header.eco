@@ -1,0 +1,21 @@
+<% translate = require 't7e' %>
+
+<div class="columns two">
+
+  <div class="column narrow">
+
+    <div class="logo">Notes from Nature</div>
+
+  </div>
+
+  <div class="column wide navigation">
+
+    <a href="#/collections"><%- translate 'span', 'navigation.collections' %></a>
+    <a href="#/about"><%- translate 'span', 'navigation.about' %></a>
+    <a href="http://talk.notesfromnature.org/"><%- translate 'span', 'navigation.discuss' %></a>
+    <a href="http://blog.notesfromnature.org/"><%- translate 'span', 'navigation.blog' %></a>
+    <a class="profile" href="#/profile"></a>
+
+  </div>
+
+</div>

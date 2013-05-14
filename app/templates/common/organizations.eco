@@ -1,0 +1,15 @@
+<% translate = require 't7e' %>
+
+<div class="organizations">
+
+  <div class="small-title"><%- translate 'span', 'home.organizations.title' %></div>
+
+  <ul>
+    <li><a href="http://www.nhm.ac.uk/tring/research-and-curation/index.html"><img alt="Natural History Museum" src="images/common/logos/natural-history-museum.png" /></a></li>
+    <li><a href="http://www.sernec.org/"><img alt="SERNEC" src="images/common/logos/sernec.png" /></a></li>
+    <li><a href="http://calbug.berkeley.edu/"><img alt="Calbug" src="images/common/logos/calbug.png" /></a></li>
+    <li><a href="http://cumuseum.colorado.edu/"><img src="images/common/logos/mnh-cu.jpg"></a></li>
+    <li><a href="http://vizzuality.com/"><img src="images/common/logos/vizzuality.png"></a></li>
+  </ul>
+
+</div>
